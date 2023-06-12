@@ -467,6 +467,7 @@ unsafe extern "C" fn callback(
         .get_mut(&key_code.with_modifiers(modifiers))
     {
         callback();
+        return std::ptr::null_mut::<cg::opaque::Event>();
     }
 
     event

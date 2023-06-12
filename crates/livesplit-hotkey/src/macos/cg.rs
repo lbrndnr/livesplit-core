@@ -169,7 +169,7 @@ pub enum EventField {
     MouseEventWindowUnderMousePointerThatCanHandleThisEvent = 92,
 }
 
-mod opaque {
+pub mod opaque {
     pub enum Event {}
     pub enum EventTapProxy {}
 }
